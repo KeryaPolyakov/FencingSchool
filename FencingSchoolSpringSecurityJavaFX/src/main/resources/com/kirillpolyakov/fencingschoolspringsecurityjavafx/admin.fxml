@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="361.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AdminController">
+   <children>
+      <Button fx:id="buttonUpdate" layoutX="71.0" layoutY="319.0" mnemonicParsing="false" onAction="#buttonUpdate" text="Обновить" />
+      <Button fx:id="buttonDelete" layoutX="168.0" layoutY="319.0" mnemonicParsing="false" onAction="#buttonDelete" text="Удалить" />
+      <Label layoutX="13.0" layoutY="39.0" text="Фамилия" />
+      <Label layoutX="13.0" layoutY="77.0" text="Имя" />
+      <Label layoutX="13.0" layoutY="118.0" text="Отчество" />
+      <Label layoutX="13.0" layoutY="152.0" text="Эл. почта" />
+      <Label layoutX="13.0" layoutY="191.0" text="Зарплата" />
+      <TextField fx:id="textFieldSurname" layoutX="94.0" layoutY="35.0" />
+      <TextField fx:id="textFieldName" layoutX="95.0" layoutY="73.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="96.0" layoutY="114.0" />
+      <TextField fx:id="textFieldEmail" layoutX="95.0" layoutY="157.0" />
+      <TextField fx:id="textFieldSalary" layoutX="96.0" layoutY="196.0" />
+      <Label layoutX="20.0" layoutY="237.0" text="Логин" />
+      <TextField fx:id="textFieldUserName" layoutX="97.0" layoutY="233.0" />
+      <CheckBox fx:id="checkBoxPassword" layoutX="17.0" layoutY="281.0" mnemonicParsing="false" text="Пароль" />
+      <TextField fx:id="textFieldPassword" layoutX="98.0" layoutY="277.0" />
+   </children>
+</AnchorPane>

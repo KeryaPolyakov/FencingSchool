@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AdminsController">
+   <children>
+      <TableView fx:id="tableViewAdmins" layoutX="65.0" layoutY="42.0" prefHeight="276.0" prefWidth="468.0" />
+      <Button layoutX="218.0" layoutY="326.0" mnemonicParsing="false" onAction="#buttonAdd" text="Добавить администратора" />
+      <Button fx:id="buttonMainMenu" layoutX="251.0" layoutY="360.0" mnemonicParsing="false" onAction="#buttonMainMenu" text="Главное меню" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="372.0" prefWidth="806.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.ApprenticeController">
+   <children>
+      <TextField fx:id="textFieldSurname" layoutX="135.0" layoutY="47.0" prefWidth="170.0" />
+      <TextField fx:id="textFieldName" layoutX="135.0" layoutY="83.0" prefWidth="170.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="135.0" layoutY="119.0" prefWidth="170.0" />
+      <TextField fx:id="textFieldPhoneNumber" layoutX="135.0" layoutY="155.0" prefWidth="169.0" />
+      <Label layoutX="16.0" layoutY="51.0" text="Фамилия">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="87.0" text="Имя">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="123.0" text="Отчество">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="159.0" text="Номер телефона">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ListView fx:id="listViewTrainings" layoutX="312.0" layoutY="45.0" prefHeight="214.0" prefWidth="486.0" />
+      <Button layoutX="378.0" layoutY="284.0" mnemonicParsing="false" onAction="#buttonAddTraining" text="Добавить тренировку" />
+      <Button layoutX="549.0" layoutY="284.0" mnemonicParsing="false" onAction="#buttonDeleteTraining" text="Удалить тренировку" />
+      <Button fx:id="buttonDeleteApprentice" layoutX="170.0" layoutY="284.0" mnemonicParsing="false" onAction="#buttonDeleteApprentice" prefHeight="31.0" prefWidth="134.0" text="Удалить ученика" />
+      <Label layoutX="482.0" layoutY="21.0" text="Список тренировок">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="buttonUpdateApprentice" layoutX="14.0" layoutY="283.0" mnemonicParsing="false" onAction="#buttonUpdateApprentice" prefHeight="31.0" prefWidth="143.0" text="Обновить ученика" />
+      <CheckBox fx:id="checkBoxPassword" layoutX="16.0" layoutY="232.0" mnemonicParsing="false" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="17.0" layoutY="198.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFiledUserName" layoutX="135.0" layoutY="192.0" prefWidth="170.0" />
+      <TextField fx:id="textFieldPassword" layoutX="136.0" layoutY="230.0" prefWidth="170.0" />
+      <Button fx:id="buttonExit" layoutX="329.0" layoutY="333.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="31.0" prefWidth="85.0" text="Выход" />
+   </children>
+</AnchorPane>

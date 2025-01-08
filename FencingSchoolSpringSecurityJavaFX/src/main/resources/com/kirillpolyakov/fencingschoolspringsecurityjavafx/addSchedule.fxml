@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="147.0" prefWidth="537.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AddScheduleController">
+   <children>
+      <Button fx:id="buttonAdd" layoutX="227.0" layoutY="97.0" mnemonicParsing="false" onAction="#buttonAdd" text="Добавить" />
+      <Label layoutX="56.0" layoutY="20.0" text="День недели">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="221.0" layoutY="20.0" text="Время начала">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="382.0" layoutY="20.0" text="Время окончания">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="comboBoxDay" layoutX="22.0" layoutY="47.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxStart" layoutX="191.0" layoutY="47.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxEnd" layoutX="364.0" layoutY="47.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

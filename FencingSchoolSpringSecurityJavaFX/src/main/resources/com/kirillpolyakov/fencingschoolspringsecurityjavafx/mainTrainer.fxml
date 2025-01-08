@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="326.0" prefWidth="624.0" styleClass="anchor-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.MainTrainerController">
+    <children>
+        <ImageView fitHeight="233.0" fitWidth="218.0" layoutX="406.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@main2.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="254.0" fitWidth="218.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@main.jpg" />
+            </image></ImageView>
+        <Button fx:id="buttonApprentice" layoutX="199.0" layoutY="109.0" mnemonicParsing="false" onAction="#buttonApprentice" prefHeight="35.0" prefWidth="226.0" text="Ученики" />
+        <Text fill="#433636" layoutX="136.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Главное меню" wrappingWidth="354.3076171875">
+            <font>
+                <Font name="Bookman Old Style" size="48.0" />
+            </font>
+        </Text>
+        <Button fx:id="buttonAccount" layoutX="199.0" layoutY="191.0" mnemonicParsing="false" onAction="#buttonAccount" prefHeight="31.0" prefWidth="226.0" text="Аккаунт" />
+        <Button fx:id="buttonExit" layoutX="253.0" layoutY="254.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="31.0" prefWidth="118.0" text="Выйти" />
+      <Button fx:id="buttonTrainings" layoutX="199.0" layoutY="150.0" mnemonicParsing="false" onAction="#buttonTrainings" prefHeight="31.0" prefWidth="226.0" text="Тренировки" />
+    </children>
+</AnchorPane>

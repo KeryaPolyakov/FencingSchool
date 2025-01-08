@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="519.0" prefWidth="472.0" styleClass="anchor-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.ApprenticesController">
+   <children>
+      <Text layoutX="131.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ученики">
+         <font>
+            <Font name="Bookman Old Style" size="48.0" />
+         </font></Text>
+      <Button fx:id="buttonAdd" layoutX="164.0" layoutY="429.0" mnemonicParsing="false" onAction="#buttonAdd" prefHeight="31.2" prefWidth="144.0" text="Добавить ученика" />
+      <Button fx:id="buttonMainMenu" layoutX="179.0" layoutY="473.0" mnemonicParsing="false" onAction="#buttonMainMenu" prefHeight="31.0" prefWidth="113.0" text="Главное меню" />
+      <TableView fx:id="tableViewApprentice" layoutY="85.0" prefHeight="330.0" prefWidth="472.0" />
+      <ImageView fitHeight="84.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ученики2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="135.0" layoutX="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ученики1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

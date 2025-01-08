@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="414.0" prefWidth="727.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.TrainerController">
+   <children>
+      <Button layoutX="14.0" layoutY="326.0" mnemonicParsing="false" onAction="#buttonUpdateTrainer" prefHeight="26.0" prefWidth="223.0" text="Обновить данные тренера" />
+      <Button fx:id="buttonDeleteTrainer" layoutX="14.0" layoutY="363.0" mnemonicParsing="false" onAction="#buttonDeleteTrainer" prefHeight="26.0" prefWidth="223.0" text="Удалить тренера" />
+      <Button layoutX="367.0" layoutY="322.0" mnemonicParsing="false" onAction="#buttonAddSchedule" text="Добавить запись" />
+      <Button layoutX="502.0" layoutY="323.0" mnemonicParsing="false" onAction="#buttonDeleteSchedule" text="Удалить запись" />
+      <TextField fx:id="textFieldSurname" layoutX="91.0" layoutY="66.0" />
+      <TextField fx:id="textFieldName" layoutX="91.0" layoutY="102.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="91.0" layoutY="138.0" />
+      <TextField fx:id="textFieldExperience" layoutX="91.0" layoutY="174.0" />
+      <Label layoutX="17.0" layoutY="70.0" text="Фамилия">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="106.0" text="Имя">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="142.0" text="Отчество">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="17.0" layoutY="178.0" text="Стаж">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView fx:id="tableViewTrainerSchedule" layoutX="277.0" layoutY="67.0" prefHeight="248.0" prefWidth="426.0" />
+      <Text layoutX="83.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данные тренера">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <TextField fx:id="textFieldEmail" layoutX="90.0" layoutY="211.0" />
+      <Label layoutX="16.0" layoutY="215.0" text="Эл. почта">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBoxPassword" layoutX="13.0" layoutY="284.0" mnemonicParsing="false" text="пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="17.0" layoutY="251.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUsername" layoutX="91.0" layoutY="249.0" />
+      <TextField fx:id="textFieldPassword" layoutX="92.0" layoutY="287.0" />
+   </children>
+</AnchorPane>

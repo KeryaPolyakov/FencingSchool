@@ -1,0 +1,502 @@
+### get User
+GET localhost:8080/user/5
+Authorization: Basic a a
+
+### get User Forbidden
+GET localhost:8080/user/1
+Authorization: Basic a a
+
+### get Authetication
+GET localhost:8080/user
+Authorization: Basic s s
+
+### get Authetication Fail
+GET localhost:8080/user
+Authorization: Basic c c
+
+### delete User
+DELETE localhost:8080/user/41
+Authorization: Basic w w
+
+### delete User Forbidden
+DELETE localhost:8080/user/13
+Authorization: Basic t t
+
+### add Admin
+POST localhost:8080/admin
+Authorization: Basic a a
+Content-Type: application/json
+
+{
+  "type" : "admin",
+  "name" : "d",
+  "password" : "d",
+  "patronymic": "d",
+  "surname" : "d",
+  "userName": "d",
+  "email": "d",
+  "salary": 1
+
+}
+
+### add Admin Forbidden
+POST localhost:8080/admin
+Authorization: Basic q q
+Content-Type: application/json
+
+{
+  "type" : "admin",
+  "name" : "s",
+  "password" : "s",
+  "patronymic": "s",
+  "surname" : "s",
+  "userName": "s",
+  "email": "s",
+  "salary": 1
+}
+
+### get Admin
+GET localhost:8080/admin/1
+Authorization: Basic a a
+
+### get Admin Forbidden
+GET localhost:8080/admin/1
+Authorization: Basic e e
+
+### get all Admins
+GET localhost:8080/admin
+Authorization: Basic a a
+
+### get all Admins Forbidden
+GET localhost:8080/admin
+Authorization: Basic w w
+
+### update Admin
+PUT localhost:8080/admin
+Authorization: Basic a a
+Content-Type: application/json
+
+{
+  "type" : "admin",
+  "id" : 4,
+  "name" : "s",
+  "patronymic": "s",
+  "surname" : "s",
+  "userName": "s",
+  "password" : "s",
+  "email": "s",
+  "salary": 1
+}
+
+### update Admin Forbidden
+PUT localhost:8080/admin
+Authorization: Basic e e
+Content-Type: application/json
+
+{
+  "type" : "admin",
+  "id" : 2,
+  "name" : "w",
+  "password" : "w",
+  "patronymic": "w",
+  "surname" : "w",
+  "userName": "w",
+  "email": "w",
+  "salary": 1
+}
+
+### delete Admin
+DELETE localhost:8080/admin/8
+Authorization: Basic a a
+
+### delete Admin Forbidden
+DELETE localhost:8080/admin/21
+Authorization: Basic q q
+
+
+### add Apprentice
+POST localhost:8080/apprentice
+Content-Type: application/json
+
+{
+  "type" : "apprentice",
+  "name" : "e",
+  "password" : "e",
+  "patronymic": "e",
+  "surname" : "e",
+  "userName": "e",
+  "phoneNumber": "e"
+}
+
+### get all Apprentices by Admin
+GET localhost:8080/apprentice/getAll
+Authorization: Basic a a
+
+### get all Apprentices by Trainer
+GET localhost:8080/apprentice/getAll
+Authorization: Basic a a
+
+### get all Apprentices Forbidden
+GET localhost:8080/apprentice/getAll
+Authorization: Basic e e
+
+### get Apprenice by Trainer
+GET localhost:8080/apprentice/get/17
+Authorization: Basic a a
+
+### get Apprenice by Admin
+GET localhost:8080/apprentice/get/18
+Authorization: Basic w w
+
+### get Apprenice Forbidden
+GET localhost:8080/apprentice/get/18
+Authorization: Basic e e
+
+### update Apprentice by Admin
+PUT localhost:8080/apprentice/update
+Authorization: Basic w w
+Content-Type: application/json
+
+{
+  "type" : "apprentice",
+  "id" : 18,
+  "name" : "r",
+  "password" : "r",
+  "patronymic": "r",
+  "surname" : "r",
+  "userName": "r",
+  "phoneNumber": "4"
+}
+
+### update Apprentice by Apprentice
+PUT localhost:8080/apprentice/update
+Authorization: Basic e e
+Content-Type: application/json
+
+{
+  "type" : "apprentice",
+  "id" : 40,
+  "name" : "r",
+  "password" : "r",
+  "patronymic": "r",
+  "surname" : "r",
+  "userName": "r",
+  "phoneNumber": "4"
+}
+
+### update Apprentice Forbidden
+PUT localhost:8080/apprentice/update
+Authorization: Basic a a
+Content-Type: application/json
+
+{
+  "type" : "apprentice",
+  "id" : 36,
+  "name" : "r",
+  "password" : "r",
+  "patronymic": "r",
+  "surname" : "r",
+  "userName": "r",
+  "phoneNumber": "4"
+}
+
+### delete Apprentice by Admin
+DELETE localhost:8080/apprentice/delete/18
+Authorization: Basic w w
+
+### delete Apprentice by Apprentice
+DELETE localhost:8080/apprentice/delete/40
+Authorization: Basic r r
+
+### delete Apprentice Forbidden
+DELETE localhost:8080/apprentice/delete/38
+Authorization: Basic a a
+
+### add Trainer
+POST localhost:8080/trainer/add
+Content-Type: application/json
+Authorization: Basic a a
+
+{
+  "type" : "trainer",
+  "name" : "c",
+  "password" : "c",
+  "patronymic": "c",
+  "surname" : "c",
+  "userName": "c",
+  "experience": 1,
+  "email": "c"
+}
+
+### add Trainer Forbidden
+POST localhost:8080/trainer/add
+Content-Type: application/json
+Authorization: Basic z z
+
+{
+  "type" : "trainer",
+  "name" : "s",
+  "password" : "s",
+  "patronymic": "s",
+  "surname" : "s",
+  "userName": "s",
+  "experience": 1,
+  "email": "s"
+}
+
+### get all Trainers by Admin
+GET localhost:8080/trainer/getAll
+Authorization: Basic a a
+
+### get all Trainers forbidden
+GET localhost:8080/trainer/getAll
+Authorization: Basic z z
+
+### get Trainer by Admin
+GET localhost:8080/trainer/get/4
+Authorization: Basic a a
+
+### get Trainer by Trainer
+GET localhost:8080/trainer/get/10
+Authorization: Basic c c
+
+### get Trainer Forbidden
+GET localhost:8080/trainer/get/10
+Authorization: Basic x x
+
+### update Trainer by Admin
+PUT localhost:8080/trainer/update
+Content-Type: application/json
+Authorization: Basic a a
+
+{
+  "type" : "trainer",
+  "id" : 10,
+  "name" : "c",
+  "password" : "c",
+  "patronymic": "c",
+  "surname" : "c",
+  "userName": "c",
+  "experience": 1,
+  "email": "c"
+}
+
+### update Trainer by Trainer
+PUT localhost:8080/trainer/update
+Content-Type: application/json
+Authorization: Basic c c
+
+{
+  "type" : "trainer",
+  "id" : 10,
+  "name" : "s",
+  "password" : "s",
+  "patronymic": "s",
+  "surname" : "s",
+  "userName": "s",
+  "experience": 1,
+  "email": "s"
+}
+
+### update Trainer Forbidden
+PUT localhost:8080/trainer/update
+Content-Type: application/json
+Authorization: Basic q q
+
+{
+  "type" : "trainer",
+  "id" : 10,
+  "name" : "s",
+  "password" : "s",
+  "patronymic": "s",
+  "surname" : "s",
+  "userName": "s",
+  "experience": 1,
+  "email": "s"
+}
+
+### delete Trainer by Admin
+DELETE localhost:8080/trainer/delete/10
+Authorization: Basic a a
+
+### delete Trainer by Trainer
+DELETE localhost:8080/trainer/delete/9
+Authorization: Basic x x
+
+### delete Trainer Forbidden
+DELETE localhost:8080/trainer/delete/8
+Authorization: Basic c c
+
+### add TrainerSchedule by Admin
+POST localhost:8080/trainer_schedule/add/8/params?day=monday&start=08:00&finish=21:00
+Authorization: Basic a a
+
+### add TrainerSchedule by Trainer
+POST localhost:8080/trainer_schedule/add/8/params?day=saturday&start=08:00&finish=22:00
+Authorization: Basic z z
+
+### add TrainerSchedule Forbidden
+POST localhost:8080/trainer_schedule/add/11/params?day=monday&start=08:00&finish=22:00
+Authorization: Basic z z
+
+### get TrainerSchedule by Admin
+GET localhost:8080/trainer_schedule/8
+Authorization: Basic a a
+
+### get TrainerSchedule by Trainer
+GET localhost:8080/trainer_schedule/8
+Authorization: Basic z z
+
+### get TrainerSchedule Forbidden
+GET localhost:8080/trainer_schedule/8
+Authorization: Basic c c
+
+### get TrainerSchedule by Apprentice
+GET localhost:8080/trainer_schedule/8
+Authorization: Basic e e
+
+### delete TrainerSchedule by Admin
+DELETE localhost:8080/trainer_schedule/delete/8/day?day=monday
+Authorization: Basic a a
+
+### delete TrainerSchedule by Trainer
+DELETE localhost:8080/trainer_schedule/delete/8/day?day=tuesday
+Authorization: Basic z z
+
+### delete TrainerSchedule by Trainer Forbidden
+DELETE localhost:8080/trainer_schedule/delete/8/day?day=monday
+Authorization: Basic c c
+
+### delete TrainerSchedule by apprentice Forbidden
+DELETE localhost:8080/trainer_schedule/delete/8/day?day=monday
+Authorization: Basic e e
+
+### add Training by Admin
+POST localhost:8080/training/apprentice_trainer?apprenticeId=5&trainerId=8
+content-type:application/json
+Authorization: Basic a a
+
+{
+  "numberGym" : 1,
+  "date" : "17.12.2024",
+  "timeStart": "08:30"
+}
+
+### add Training by Trainer
+POST localhost:8080/training/apprentice_trainer?apprenticeId=5&trainerId=8
+content-type:application/json
+Authorization: Basic z z
+
+{
+  "numberGym" : 1,
+  "date" : "18.12.2024",
+  "timeStart": "08:30"
+}
+
+### add Training by Trainer Forbidden
+POST localhost:8080/training/apprentice_trainer?apprenticeId=5&trainerId=8
+content-type:application/json
+Authorization: Basic c c
+
+{
+  "numberGym" : 1,
+  "date" : "24.09.2024",
+  "timeStart": "08:30"
+}
+
+### add Training by Apprentice
+POST localhost:8080/training/apprentice_trainer?apprenticeId=5&trainerId=8
+content-type:application/json
+Authorization: Basic e e
+
+{
+  "numberGym" : 1,
+  "date" : "20.12.2024",
+  "timeStart": "08:30"
+}
+
+### add Training by apprentice Forbidden
+POST localhost:8080/training/apprentice_trainer?apprenticeId=6&trainerId=8
+content-type:application/json
+Authorization: Basic e e
+
+{
+  "numberGym" : 1,
+  "date" : "25.09.2024",
+  "timeStart": "08:30"
+}
+
+### get Training by Admin
+GET localhost:8080/training/2
+Authorization: Basic a a
+
+### get Training by Trainer
+GET localhost:8080/training/2
+Authorization: Basic z z
+
+### get Training by Apprentice
+GET localhost:8080/training/2
+Authorization: Basic e e
+
+### get Training by trainer Forbidden
+GET localhost:8080/training/1
+Authorization: Basic c c
+
+### get Training by apprentice Forbidden
+GET localhost:8080/training/1
+Authorization: Basic w w
+
+### get apprentice Trainings by Admin
+GET localhost:8080/training/apprentice/5
+Authorization: Basic a a
+
+### get apprentice Trainings by Trainer
+GET localhost:8080/training/apprentice/5
+Authorization: Basic z z
+
+### get apprentice Trainings by Apprentice
+GET localhost:8080/training/apprentice/5
+Authorization: Basic e e
+
+### get apprentice Trainings by Apprentice Forbidden
+GET localhost:8080/training/apprentice/5
+Authorization: Basic w w
+
+### get trainer Trainings by Admin
+GET localhost:8080/training/trainer/8
+Authorization: Basic a a
+
+### get trainer Trainings by Trainer
+GET localhost:8080/training/trainer/8
+Authorization: Basic z z
+
+### get trainer Trainings by Trainer Forbidden
+GET localhost:8080/training/trainer/6
+Authorization: Basic q q
+
+### get trainer Trainings by Apprentice Forbidden
+GET localhost:8080/training/trainer/8
+Authorization: Basic e e
+
+### delete Training by Admin
+DELETE localhost:8080/training/delete/1
+Authorization: Basic a a
+
+### delete Training by Trainer
+DELETE localhost:8080/training/delete/3
+Authorization: Basic z z
+
+### delete Training by Apprentice
+DELETE localhost:8080/training/delete/4
+Authorization: Basic e e
+
+### delete Training by Trainer Forbidden
+DELETE localhost:8080/training/delete/5
+Authorization: Basic c c
+
+### delete Training by Apprentice Forbidden
+DELETE localhost:8080/training/delete/5
+Authorization: Basic w w
+
+### get swagger documentation
+GET http://localhost:8080/swagger-ui/index.html

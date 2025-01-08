@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="497.0" prefWidth="235.0" styleClass="anchor-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AddTrainerController">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="164.0" layoutX="35.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@istockphoto-663831228-170667a.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textFieldSurname" layoutX="35.0" layoutY="99.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldName" layoutX="35.0" layoutY="150.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="35.0" layoutY="200.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldExperience" layoutX="35.0" layoutY="251.0" prefWidth="164.0" />
+      <Label layoutX="88.0" layoutY="79.0" text="Фамилия">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="130.0" text="Имя">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="180.0" text="Отчество">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="231.0" text="Стаж">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonAdd" layoutX="76.0" layoutY="447.0" mnemonicParsing="false" onAction="#buttonAdd" prefHeight="31.0" prefWidth="82.0" text="Добавить" />
+      <TextField fx:id="textFieldEmail" layoutX="36.0" layoutY="302.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldUserName" layoutX="36.0" layoutY="353.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldPassword" layoutX="36.0" layoutY="403.0" prefWidth="164.0" />
+      <Label layoutX="55.0" layoutY="281.0" text="Электронная почта">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="332.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="383.0" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="327.0" prefWidth="624.0" styleClass="anchor-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.MainAdminController">
+   <children>
+      <ImageView fitHeight="233.0" fitWidth="218.0" layoutX="406.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@main2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="254.0" fitWidth="218.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@main.jpg" />
+         </image></ImageView>
+      <Button fx:id="buttonTrainers" layoutX="199.0" layoutY="96.0" mnemonicParsing="false" onAction="#buttonTrainers" prefHeight="35.0" prefWidth="226.0" text="Тренеры" />
+      <Button fx:id="buttonApprentice" layoutX="199.0" layoutY="137.0" mnemonicParsing="false" onAction="#buttonApprentice" prefHeight="35.0" prefWidth="226.0" text="Ученики" />
+      <Text fill="#433636" layoutX="136.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Главное меню" wrappingWidth="354.3076171875">
+         <font>
+            <Font name="Bookman Old Style" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonAccount" layoutX="200.0" layoutY="219.0" mnemonicParsing="false" onAction="#buttonAccount" prefHeight="31.0" prefWidth="226.0" text="Аккаунт" />
+      <Button fx:id="buttonExit" layoutX="253.0" layoutY="265.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="31.0" prefWidth="118.0" text="Выйти" />
+      <Button fx:id="buttonAdministrators" layoutX="200.0" layoutY="178.0" mnemonicParsing="false" onAction="#buttonAdministrators" prefHeight="31.0" prefWidth="226.0" text="Администраторы" />
+   </children>
+</AnchorPane>

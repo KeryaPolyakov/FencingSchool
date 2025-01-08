@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="357.0" prefWidth="440.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AddTrainingController">
+   <children>
+      <ComboBox fx:id="comboBoxTrainer" layoutX="12.0" layoutY="37.0" prefHeight="26.0" prefWidth="415.0" />
+      <Label layoutX="11.0" layoutY="17.0" text="Тренер:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="datePickerData" layoutX="12.0" layoutY="271.0" prefHeight="26.0" prefWidth="134.0" />
+      <ComboBox fx:id="comboBoxTime" layoutX="292.0" layoutY="271.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="61.0" layoutY="251.0" text="Дата">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="339.0" layoutY="251.0" text="Время">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="195.0" layoutY="251.0" text="№ зала">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="buttonAddTraining" layoutX="125.0" layoutY="314.0" mnemonicParsing="false" onAction="#buttonAddTraining" prefHeight="26.0" prefWidth="190.0" text="Добавить тренировку" />
+      <TableView fx:id="tableViewSchedule" layoutX="12.0" layoutY="95.0" prefHeight="154.0" prefWidth="415.0" />
+      <Label layoutX="12.0" layoutY="77.0" text="Расписание тренера:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="comboBoxNumberGym" layoutX="152.0" layoutY="271.0" prefWidth="134.0" />
+   </children>
+</AnchorPane>

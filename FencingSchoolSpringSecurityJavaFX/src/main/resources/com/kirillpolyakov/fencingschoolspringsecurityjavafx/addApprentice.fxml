@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="235.0" styleClass="anchor-pane" stylesheets="@main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kirillpolyakov.fencingschoolspringsecurityjavafx.controller.AddApprenticeController">
+   <children>
+      <Button fx:id="buttonAdd" layoutX="76.0" layoutY="399.0" mnemonicParsing="false" onAction="#buttonAdd" text="Добавить" />
+      <TextField fx:id="textFieldPhoneNumber" layoutX="35.0" layoutY="246.0" prefHeight="26.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldPatronymic" layoutX="36.0" layoutY="197.0" prefHeight="26.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldSurname" layoutX="35.0" layoutY="97.0" prefHeight="26.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldName" layoutX="35.0" layoutY="146.0" prefWidth="164.0" />
+      <Label layoutX="88.0" layoutY="77.0" text="Фамилия">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="103.0" layoutY="128.0" text="Имя">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="87.0" layoutY="177.0" text="Отчество">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="63.0" layoutY="227.0" text="Номер телефона">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="109.0" fitWidth="164.0" layoutX="35.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@istockphoto-663831228-170667a.jpg" />
+         </image></ImageView>
+      <TextField fx:id="textFieldPassword" layoutX="36.0" layoutY="346.0" prefHeight="26.0" prefWidth="164.0" />
+      <TextField fx:id="textFieldUserName" layoutX="37.0" layoutY="297.0" prefHeight="26.0" prefWidth="164.0" />
+      <Label layoutX="98.0" layoutY="276.0" text="Логин">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="327.0" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
